@@ -1,0 +1,41 @@
+{
+  "name": "baplayer-command",
+  "displayName": "baplayer command",
+  "description": "A extension for baplayer.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "publisher": "dzaaaaaa",
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "baplayer",
+        "aliases": [
+          "baplayer",
+          "baplayer"
+        ],
+        "extensions": [
+          ".txt"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "baplayer",
+        "scopeName": "source.txt",
+        "path": "./syntaxes/baplayer.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "baplayer",
+        "path": "./snippets/ba.code-snippets"
+      }
+    ]
+  }
+}

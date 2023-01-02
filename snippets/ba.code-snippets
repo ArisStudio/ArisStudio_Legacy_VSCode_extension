@@ -1,0 +1,96 @@
+{
+	"load spr | 以普通状态加载人物": {
+		"prefix": "load spr",
+		"body": [
+			"load spr ${1:nameId} ${2:sprData}"
+		],
+		"description": "load spr | 以普通状态加载人物"
+	},
+	"load sprC | 以通信加载人物": {
+		"prefix": "load sprC",
+		"body": [
+			"load spr ${1:nameId} ${2:sprData}"
+		],
+		"description": "load sprC | 以通信加载人物"
+	},
+	"load bg | 加载背景": {
+		"prefix": "load bg",
+		"body": [
+			"load bg ${1:nameId} ${2:bgData}"
+		],
+		"description": "load bg | 加载背景"
+	},
+	"load cover | 加载覆盖图片": {
+		"prefix": "load cover",
+		"body": [
+			"load cover ${1:nameId} ${2:coverData}"
+		],
+		"description": "load cover | 加载覆盖图片"
+	},
+	"load bgm | 加载背景音乐": {
+		"prefix": "load bgm",
+		"body": [
+			"load bgm ${1:nameId} ${2:bgmData}"
+		],
+		"description": "load bgm | 加载背景音乐"
+	},
+	"load se | 加载音效": {
+		"prefix": "load se",
+		"body": [
+			"load se ${1:nameId} ${2:seData}"
+		],
+		"description": "load se | 加载音效"
+	},
+	"load ch | 加载自定义人物": {
+		"prefix": "load ch",
+		"body": [
+			"load ch ${1:nameId} ${3:y} ${4:scale} ${2:chData}"
+		],
+		"description": "load ch | 加载自定义人物"
+	},
+	"load end | 结束加载": {
+		"prefix": "load end",
+		"body": [
+			"load end"
+		],
+		"description": "load end | 结束加载"
+	},
+	"banner | 单标题横幅": {
+		"prefix": "banner",
+		"body": [
+			"banner '$1'"
+		],
+		"description": "banner | 单标题横幅"
+	},
+	"banner2 | 双标题横幅": {
+		"prefix": "banner2",
+		"body": [
+			"banner2 '$1' '$2'"
+		],
+		"description": "banner2 | 双标题横幅"
+	},
+	"label | 小标题": {
+		"prefix": "label",
+		"body": [
+			"label '$1'"
+		],
+		"description": "label | 小标题"
+	},
+	"t/txt | 文本": {
+		"prefix": [
+			"t",
+			"txt"
+		],
+		"body": [
+			"t '${1:name}' '${2:group}' '${3:content}'"
+		],
+		"description": "t/txt | 文本"
+	},
+	"th | 文本并带有指定角色高亮": {
+		"prefix": "th",
+		"body": [
+			"th ${1:nameId} '${2:name}' '${3:group}' '${4:content}'"
+		],
+		"description": "th | 文本并带有指定角色高亮"
+	},
+}

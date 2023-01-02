@@ -1,0 +1,34 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "baplayer",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.baplayer",
+					"match": "\\b(load|spr|bgm|bg|se|cover|banner|banner2|label|t|txt|th|button|target)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.baplayer",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.baplayer",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.txt"
+}
