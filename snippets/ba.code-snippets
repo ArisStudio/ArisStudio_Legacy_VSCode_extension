@@ -93,4 +93,167 @@
 		],
 		"description": "th | 文本并带有指定角色高亮"
 	},
+	"wait | 等待指定秒后执行鼠标点击效果": {
+		"prefix": "wait",
+		"body": [
+			"wait $1"
+		],
+		"description": "wait | 等待指定秒后执行鼠标点击效果"
+	},
+	"target | 标记此行": {
+		"prefix": "target",
+		"body": [
+			"target t$TM_LINE_NUMBER"
+		],
+		"description": "target | 标记此行"
+	},
+	"jump | 跳转到标记行": {
+		"prefix": "jump",
+		"body": [
+			"jump ${1:targetName}"
+		],
+		"description": "jump | 跳转到标记行"
+	},
+	"text hide | 隐藏文本框": {
+		"prefix": "text hide",
+		"body": [
+			"text hide"
+		],
+		"description": "text hide | 隐藏文本框"
+	},
+	"text size | 设置字体大小": {
+		"prefix": "text size",
+		"body": [
+			"text size ${1|small,medium,big|}"
+		],
+		"description": "text size | 设置字体大小"
+	},
+	"button1 | 一个选择按钮": {
+		"prefix": [
+			"button",
+			"b1"
+		],
+		"body": [
+			"button '${1:content1}' '${2:targetName1}'"
+		],
+		"description": "button1 | 一个选择按钮"
+	},
+	"button2 | 两个选择按钮": {
+		"prefix": [
+			"button",
+			"b2"
+		],
+		"body": [
+			"button '${1:content1}' '${2:targetName1}' '${3:content2}' '${4:targetName2}'"
+		],
+		"description": "button2 | 两个选择按钮"
+	},
+	"button3 | 三个选择按钮": {
+		"prefix": [
+			"button",
+			"b3"
+		],
+		"body": [
+			"button '${1:content1}' '${2:targetName1}' '${3:content2}' '${4:targetName2}' '${5:content3}' '${6:targetName3}'"
+		],
+		"description": "button3 | 三个选择按钮"
+	},
+	"curtain | 幕布显示相关命令": {
+		"prefix": "curtain",
+		"body": [
+			"curtain ${1|show,showD,hide,hideD|}"
+		],
+		"description": "curtain | 幕布显示相关命令"
+	},
+	"curtain color | 设置幕布颜色": {
+		"prefix": "curtain color",
+		"body": [
+			"curtain ${1|black,white,red|}"
+		],
+		"description": "curtain color | 设置幕布颜色"
+	},
+	"bg | 背景图片显示相关命令": {
+		"prefix": "bg",
+		"body": [
+			"bg ${1|show,showD,hide,hideD|}"
+		],
+		"description": "bg | 背景图片显示相关命令"
+	},
+	"bg set | 设置背景图片": {
+		"prefix": "bg set",
+		"body": [
+			"bg set ${1:nameId}"
+		],
+		"description": "bg set | 设置背景图片"
+	},
+	"cover | 覆盖图片显示相关命令": {
+		"prefix": "cover",
+		"body": [
+			"cover ${1|show,hide|}"
+		],
+		"description": "cover | 覆盖图片显示相关命令"
+	},
+	"cover set | 设置背景图片": {
+		"prefix": "cover set",
+		"body": [
+			"cover set ${1:nameId}"
+		],
+		"description": "cover set | 设置背景图片"
+	},
+	"bgm | 背景音乐基本命令": {
+		"prefix": "bgm",
+		"body": [
+			"bgm ${1|play,pause,stop|}"
+		],
+		"description": "bgm | 背景音乐基本命令"
+	},
+	"bgm set | 设置背景音乐": {
+		"prefix": "bgm set",
+		"body": [
+			"bgm set ${1:nameId}"
+		],
+		"description": "bgm set | 设置背景音乐"
+	},
+	"se | 音效基本命令": {
+		"prefix": "se",
+		"body": [
+			"se ${1|play,pause,stop|}"
+		],
+		"description": "se | 音效基本命令"
+	},
+	"se set | 设置音效": {
+		"prefix": "se set",
+		"body": [
+			"se set ${1:nameId}"
+		],
+		"description": "se set | 设置音效"
+	},
+	"spr | 人物显示相关命令": {
+		"prefix": "spr",
+		"body": [
+			"spr ${1|show,hide,showD,hideD|} ${2:nameID}"
+		],
+		"description": "spr | 人物显示相关命令"
+	},
+	"spr hl | 人物高亮": {
+		"prefix": "spr hl",
+		"body": [
+			"spr hl ${1:nameID} ${2:1}"
+		],
+		"description": "spr hl | 人物高亮"
+	},
+	"spr state | 人物面部状态": {
+		"prefix": "spr state",
+		"body": [
+			"spr state ${1:nameID} ${2:01}"
+		],
+		"description": "spr state | 人物面部状态"
+	},
+	"spr emo | 人物emo": {
+		"prefix": "spr emo",
+		"body": [
+			"spr emo ${2:nameID} ${1|Action,Aggro,Anxiety,Chat,E,EQ,Q,Heart,Idea,Note,Shy,Sweat,Twinkle,Bulb,Sad,Sigh,Tear|}"
+		],
+		"description": "spr emo | 人物emo"
+	},
 }

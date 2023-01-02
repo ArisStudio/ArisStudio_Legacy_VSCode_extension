@@ -1,8 +1,14 @@
 {
   "name": "baplayer-command",
+  "icon": "images/icon.png",
   "displayName": "baplayer command",
   "description": "A extension for baplayer.",
-  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tualin14/baplayer-command"
+  },
+  "homepage": "https://github.com/Tualin14/baplayer-command",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },

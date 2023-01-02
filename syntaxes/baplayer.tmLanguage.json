@@ -7,6 +7,12 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords.other"
 		}
 	],
 	"repository": {
@@ -14,20 +20,28 @@
 			"patterns": [
 				{
 					"name": "keyword.control.baplayer",
-					"match": "\\b(load|spr|bgm|bg|se|cover|banner|banner2|label|t|txt|th|button|target)\\b"
+					"match": "\\b(load|spr|bgm|bg|se|cover|banner|banner2|label|t|txt|th|button|target|jump|wait|text|curtain)\\b"
 				}
 			]
 		},
 		"strings": {
-			"name": "string.quoted.double.baplayer",
-			"begin": "\"",
-			"end": "\"",
+			"name": "string.quoted.single.baplayer",
+			"begin": "'",
+			"end": "'",
 			"patterns": [
 				{
 					"name": "constant.character.escape.baplayer",
 					"match": "\\\\."
 				}
 			]
+		},
+		"comments": {
+			"name": "comment.line.double-slash",
+			"match": "//[^\n]*"
+		},
+		"keywords.other": {
+			"name": "keyword.other",
+			"match": "=[^\n]*"
 		}
 	},
 	"scopeName": "source.txt"
