@@ -1,0 +1,62 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ArisStudio",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#support.function"
+		},
+		{
+			"include": "#keywords.other"
+		},
+		{
+			"include": "#keywords.other.="
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.ArisStudio",
+					"match": "\\b(load|spr|bgm|bg|se|cover|label|text|curtain|screen|end)\\b"
+				}
+			]
+		},
+		"support.function": {
+			"name": "support.function.ArisStudio",
+			"match": "\\b(show|hide|size|interval|font|showD|hideD|set|change|color|a|shakeX|shakeY|play|pause|stop|x|y|z|move|moveX|moveY|state|emo|hl|close|back)\\b"
+		},
+		"keywords.other": {
+			"name": "keyword.other.ArisStudio",
+			"match": "\\b(banner|banner2|t|txt|th|button|buttonS|target|jump|wait|auto|ChangeTxt)\\b"
+		},
+		"keywords.other.=": {
+			"name": "keyword.other.ArisStudio",
+			"match": "=[^\n]*"
+		},
+		"strings": {
+			"name": "string.quoted.single.ArisStudio",
+			"begin": "'",
+			"end": "'",
+			"patterns": [
+				{
+					"name": "constant.character.escape.ArisStudio",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.double-slash.ArisStudio",
+			"match": "//[^\n]*"
+		}
+	},
+	"scopeName": "source.txt"
+}

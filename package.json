@@ -1,14 +1,14 @@
 {
   "name": "baplayer-command",
   "icon": "images/icon.png",
-  "displayName": "baplayer command",
-  "description": "A extension for baplayer.",
+  "displayName": "ArisStudio command",
+  "description": "A extension for ArisStudio.",
   "repository": {
     "type": "git",
     "url": "https://github.com/Tualin14/baplayer-command"
   },
   "homepage": "https://github.com/Tualin14/baplayer-command",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -19,10 +19,10 @@
   "contributes": {
     "languages": [
       {
-        "id": "baplayer",
+        "id": "ArisStudio",
         "aliases": [
-          "baplayer",
-          "baplayer"
+          "ArisStudio",
+          "ArisStudio"
         ],
         "extensions": [
           ".txt"
@@ -32,15 +32,15 @@
     ],
     "grammars": [
       {
-        "language": "baplayer",
+        "language": "ArisStudio",
         "scopeName": "source.txt",
-        "path": "./syntaxes/baplayer.tmLanguage.json"
+        "path": "./syntaxes/as.tmLanguage.json"
       }
     ],
     "snippets": [
       {
-        "language": "baplayer",
-        "path": "./snippets/ba.code-snippets"
+        "language": "ArisStudio",
+        "path": "./snippets/as.code-snippets"
       }
     ]
   }

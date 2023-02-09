@@ -41,57 +41,12 @@
 		],
 		"description": "load se | 加载音效"
 	},
-	"load ch | 加载自定义人物": {
-		"prefix": "load ch",
-		"body": [
-			"load ch ${1:nameId} ${3:y} ${4:scale} ${2:chData}"
-		],
-		"description": "load ch | 加载自定义人物"
-	},
 	"load end | 结束加载": {
 		"prefix": "load end",
 		"body": [
 			"load end"
 		],
 		"description": "load end | 结束加载"
-	},
-	"banner | 单标题横幅": {
-		"prefix": "banner",
-		"body": [
-			"banner '$1'"
-		],
-		"description": "banner | 单标题横幅"
-	},
-	"banner2 | 双标题横幅": {
-		"prefix": "banner2",
-		"body": [
-			"banner2 '$1' '$2'"
-		],
-		"description": "banner2 | 双标题横幅"
-	},
-	"label | 小标题": {
-		"prefix": "label",
-		"body": [
-			"label '$1'"
-		],
-		"description": "label | 小标题"
-	},
-	"t/txt | 文本": {
-		"prefix": [
-			"t",
-			"txt"
-		],
-		"body": [
-			"t '${1:name}' '${2:group}' '${3:content}'"
-		],
-		"description": "t/txt | 文本"
-	},
-	"th | 文本并带有指定角色高亮": {
-		"prefix": "th",
-		"body": [
-			"th ${1:nameId} '${2:name}' '${3:group}' '${4:content}'"
-		],
-		"description": "th | 文本并带有指定角色高亮"
 	},
 	"wait | 等待指定秒后执行鼠标点击效果": {
 		"prefix": "wait",
@@ -114,6 +69,37 @@
 		],
 		"description": "jump | 跳转到标记行"
 	},
+	"auto | 设置自动间隔": {
+		"prefix": "auto",
+		"body": [
+			"auto $1"
+		],
+		"description": "auto | 设置自动间隔"
+	},
+	"ChangeTxt | 切换脚本": {
+		"prefix": "ChangeTxt",
+		"body": [
+			"ChangeTxt $1"
+		],
+		"description": "ChangeTxt | 切换脚本"
+	},
+	"t/txt | 文本": {
+		"prefix": [
+			"t",
+			"txt"
+		],
+		"body": [
+			"t '${1:name}' '${2:group}' '${3:content}'"
+		],
+		"description": "t/txt | 文本"
+	},
+	"th | 文本并带有指定角色高亮": {
+		"prefix": "th",
+		"body": [
+			"th ${1:nameId} '${2:name}' '${3:group}' '${4:content}'"
+		],
+		"description": "th | 文本并带有指定角色高亮"
+	},
 	"text hide | 隐藏文本框": {
 		"prefix": "text hide",
 		"body": [
@@ -127,6 +113,41 @@
 			"text size ${1|small,medium,big|}"
 		],
 		"description": "text size | 设置字体大小"
+	},
+	"text interval | 设置打字机效果时间间隔": {
+		"prefix": "text interval",
+		"body": [
+			"text interval ${1:0.02}"
+		],
+		"description": "text interval | 设置打字机效果时间间隔"
+	},
+	"text font | 切换字体": {
+		"prefix": "text font",
+		"body": [
+			"text font ${1:JiangChengYuanTi}"
+		],
+		"description": "text font | 切换字体"
+	},
+	"banner | 单标题横幅": {
+		"prefix": "banner",
+		"body": [
+			"banner '$1'"
+		],
+		"description": "banner | 单标题横幅"
+	},
+	"banner2 | 双标题横幅": {
+		"prefix": "banner2",
+		"body": [
+			"banner2 '$1' '$2'"
+		],
+		"description": "banner2 | 双标题横幅"
+	},
+	"label | 小标题": {
+		"prefix": "label",
+		"body": [
+			"label '$1'"
+		],
+		"description": "label | 小标题"
 	},
 	"button1 | 一个选择按钮": {
 		"prefix": [
@@ -165,12 +186,30 @@
 		],
 		"description": "curtain | 幕布显示相关命令"
 	},
+	"curtain a | 设置幕布透明度": {
+		"prefix": "curtain a",
+		"body": [
+			"curtain a $1"
+		],
+		"description": "curtain a | 设置幕布透明度"
+	},
 	"curtain color | 设置幕布颜色": {
 		"prefix": "curtain color",
 		"body": [
-			"curtain ${1|black,white,red|}"
+			"curtain color ${1:#ffffff}"
 		],
 		"description": "curtain color | 设置幕布颜色"
+	},
+	"curtain black/white/red | 设置幕布颜色为黑/白/红": {
+		"prefix": [
+			"curtain black",
+			"curtain white",
+			"curtain red"
+		],
+		"body": [
+			"curtain ${1|black,white,red|}"
+		],
+		"description": "curtain black/white/red | 设置幕布颜色为黑/白/红"
 	},
 	"bg | 背景图片显示相关命令": {
 		"prefix": "bg",
@@ -186,6 +225,13 @@
 		],
 		"description": "bg set | 设置背景图片"
 	},
+	"bg change | 切换背景图片": {
+		"prefix": "bg change",
+		"body": [
+			"bg change ${1:nameId}"
+		],
+		"description": "bg change | 切换背景图片"
+	},
 	"cover | 覆盖图片显示相关命令": {
 		"prefix": "cover",
 		"body": [
@@ -199,6 +245,34 @@
 			"cover set ${1:nameId}"
 		],
 		"description": "cover set | 设置背景图片"
+	},
+	"screen | 场景效果": {
+		"prefix": "screen",
+		"body": [
+			"screen ${1:speedline|smoke|dust|rain|snow|shot}"
+		],
+		"description": "screen | 场景效果"
+	},
+	"end finish | 播放完成动画": {
+		"prefix": "end finish",
+		"body": [
+			"end finish ${1:content}"
+		],
+		"description": "end finish | 播放完成动画"
+	},
+	"end continue | 播放继续动画": {
+		"prefix": "end continue",
+		"body": [
+			"end continue"
+		],
+		"description": "end continue | 播放继续动画"
+	},
+	"end clear | 清除结束动画": {
+		"prefix": "end clear",
+		"body": [
+			"end clear"
+		],
+		"description": "end clear | 清除结束动画"
 	},
 	"bgm | 背景音乐基本命令": {
 		"prefix": "bgm",
