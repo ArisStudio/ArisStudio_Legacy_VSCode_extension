@@ -1,3 +1,1 @@
-# baplayer-command README
-
-A extension for [ArisStudio](https://github.com/Tualin14/ArisStudio).
+# A VSCode extension for [ArisStudioLegacy.0.2](https://github.com/ArisStudio/ArisStudioLegacy).
